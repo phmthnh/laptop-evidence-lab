@@ -5,6 +5,8 @@ Hai phần độc lập:
 1. **Website công khai**: hoạt động không cần Label Studio; xuất36claim thành task JSON + XML, đọc annotation export cục bộ.
 2. **Codex cục bộ**: MCP tự viết, chỉ đọc `site/data.json` và dự án có title `Laptop Evidence Lab` trong SQLite cục bộ. Không phải plugin chính thức của HumanSignal. Không cần token vì đọc database cục bộ ở chế độ SQLite `mode=ro` + `query_only=ON`; không truy cập bảng tài khoản hoặc mật khẩu. Không có công cụ ghi, xóa, SQL tùy ý hoặc gửi mạng.
 
+Trên máy thiết lập ban đầu, project **ID1** đã được tạo dưới tài khoản người dùng: http://127.0.0.1:8080/projects/1/data/ . Đã nhập36task và cấu hình XML, chưa có annotation được gửi. Không import lại nếu project này đã tồn tại; bước setup bên dưới dành cho máy/instance mới.
+
 ## Runtime đã dùng
 
 Python3.12, Label Studio1.23.2, MCP Python SDK2.3.0. Runtime và DB nằm trong `.private/`, không đưa lên repo. Chạy lại ở máy khác:
