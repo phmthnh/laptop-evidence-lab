@@ -4,7 +4,7 @@ export const helpText = {
   weight:['Mang đi có nặng không?','Số kg này là cân nặng thân máy do cửa hàng công bố. Khi đi làm, bạn còn mang sạc và dây. Nếu mang hằng ngày, nên cầm thử cả bộ trước khi chọn.'],
   memory:['RAM — chỗ để làm việc','Hãy hình dung RAM như mặt bàn: bạn mở Excel, phần mềm kế toán và nhiều tab cùng lúc thì cần thêm chỗ. Cả ba được ghi 16 GB; muốn biết có dùng thoải mái không, hãy thử đúng những file bạn hay làm.'],
   ssd:['SSD — chỗ cất tài liệu','SSD giống chiếc tủ đựng file, ảnh và phần mềm. Cả ba được ghi 512 GB. Windows và ứng dụng cũng dùng chỗ này, nên dung lượng trống sẽ ít hơn con số ghi trên máy.'],
-  battery:['Pin dùng được bao lâu?','50 Wh là lượng điện pin chứa, không phải 50 giờ dùng. Thời gian còn tùy độ sáng và việc bạn làm. Hiện chưa có bài thử giống nhau để nói máy nào lâu hết pin hơn.'],
+  battery:['Dung lượng pin là gì?','50 Wh là lượng điện pin chứa, không phải 50 giờ dùng. Thời gian còn tùy độ sáng và việc bạn làm. Hiện chưa có bài thử giống nhau để nói máy nào lâu hết pin hơn.'],
   keyboard:['Bàn phím số là gì?','Đó là cụm phím 0–9 nằm bên phải, giống cách bố trí trên máy tính để bàn. Nếu nhập số kế toán nhiều, hãy gõ thử để xem tay có thoải mái không. Ảnh cả ba máy có cụm này; vẫn cần xem máy thật.'],
   display:['Màn hình: ưu tiên nhìn chữ dễ','Với bảng tính, hãy xem chữ có dễ đọc và có thấy đủ cột không. Hz nói về độ mượt khi cuộn, nit nói về độ sáng, sRGB nói về màu sắc; không con số nào tự bảo đảm bạn nhìn sẽ thoải mái.'],
   warranty:['Máy lỗi thì mang đến đâu?','Cần biết ai nhận sửa, ở đâu và chờ bao lâu. Shop ghi máy 12 tháng, pin và sạc 6 tháng; lỗi nặng có thể gửi về Trung Quốc. Chưa xác nhận bạn tự mang tới Lenovo Việt Nam sẽ được nhận bảo hành.'],
@@ -14,7 +14,7 @@ export const helpText = {
 };
 export function helpButton(key){if(!helpText[key])return '';return `<button type="button" class="spec-help-trigger" data-help="${key}" aria-label="Giải thích: ${helpText[key][0]}" aria-controls="spec-help" aria-expanded="false">?</button>`;}
 export function simpleCell(p,field){
- const cells={price:`${(p.price.value/1e6).toLocaleString('vi-VN')} triệu`,weight:`${p.weight.value.toLocaleString('vi-VN')} kg theo cửa hàng`,battery:'Chưa biết dùng được mấy giờ',keyboard:'Có trong ảnh · cần thử máy thật',memory:`${p.listingSpecs.memoryGB} GB theo cửa hàng${p.claims.memory.status==='conflict'?' · loại RAM/cách nâng chưa rõ':''}`,ssd:`${p.listingSpecs.ssdGB} GB theo cửa hàng`,display:p.claims.display.status==='conflict'?'Cần hỏi lại kích thước màn hình':'Cửa hàng ghi 16 inch · nên nhìn thử chữ',warranty:'Máy 12 tháng qua shop · pin/sạc 6 tháng'};
+ const cells={price:`${(p.price.value/1e6).toLocaleString('vi-VN')} triệu`,weight:`${p.weight.value.toLocaleString('vi-VN')} kg theo cửa hàng`,battery:`${p.listingSpecs.batteryWh} Wh theo cửa hàng · chưa đo giờ dùng thực tế`,keyboard:'Có trong ảnh · cần thử máy thật',memory:`${p.listingSpecs.memoryGB} GB theo cửa hàng${p.claims.memory.status==='conflict'?' · loại RAM/cách nâng chưa rõ':''}`,ssd:`${p.listingSpecs.ssdGB} GB theo cửa hàng`,display:p.claims.display.status==='conflict'?'Cần hỏi lại kích thước màn hình':'Cửa hàng ghi 16 inch · nên nhìn thử chữ',warranty:'Máy 12 tháng qua shop · pin/sạc 6 tháng'};
  return cells[field];
 }
 export function installHelp(){
