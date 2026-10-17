@@ -13,13 +13,6 @@ export const helpText = {
   upgrade:['Nâng cấp là gì?','Sau này bạn có thể muốn thêm chỗ làm việc (RAM) hoặc chỗ cất file (SSD). Không phải máy nào cũng thay thêm được; cần cửa hàng xác nhận đúng chiếc máy và báo tổng tiền trước.']
 };
 export function helpButton(key){if(!helpText[key])return '';return `<button type="button" class="spec-help-trigger" data-help="${key}" aria-label="Giải thích: ${helpText[key][0]}" aria-controls="spec-help" aria-expanded="false">?</button>`;}
-export const needs={
-  balanced:['Tôi muốn cân bằng','Xem trước giá, việc mang theo và bàn phím. Pin và nơi bảo hành vẫn cần hỏi thêm.'],
-  carry:['Tôi hay mang máy đi làm','SE và 16c được cửa hàng ghi nhẹ hơn mẫu H255 khoảng 130 g. Hãy thử cầm cả máy lẫn sạc.'],
-  battery:['Tôi muốn ít phải cắm sạc','Chưa thể chọn máy lâu hết pin nhất: cả ba được ghi cùng dung lượng pin, nhưng chưa có số giờ dùng thực tế.'],
-  numbers:['Tôi nhập số, dùng Excel nhiều','Ảnh cả ba đều có cụm phím số bên phải. Việc cần làm là gõ thử và mở đúng file Excel bạn thường dùng.'],
-  value:['Tôi muốn tiết kiệm chi phí','16c đang có giá thấp nhất trên web. Trước khi mua, cần cửa hàng làm rõ thông tin màn hình và cấu hình đang ghi chưa thống nhất.']
-};
 export function simpleCell(p,field){
  const cells={price:`${(p.price.value/1e6).toLocaleString('vi-VN')} triệu`,weight:`${p.weight.value.toLocaleString('vi-VN')} kg theo cửa hàng`,battery:'Chưa biết dùng được mấy giờ',keyboard:'Có trong ảnh · cần thử máy thật',memory:'16 GB theo cửa hàng',ssd:'512 GB theo cửa hàng',display:p.id==='r170'?'Cần hỏi lại kích thước màn hình':'Cửa hàng ghi 16 inch · nên nhìn thử chữ',warranty:'Máy 12 tháng qua shop · pin/sạc 6 tháng'};
  return cells[field];

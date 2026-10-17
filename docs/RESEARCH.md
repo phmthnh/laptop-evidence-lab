@@ -64,3 +64,6 @@ Mô hình sở thích minh bạch, không phải benchmark hoặc bằng chứng
 - 16c: https://trieubom.com/wp-content/uploads/2026/02/1w.jpg
 
 Ảnh được tải nguyên bản để trang không phụ thuộc hotlink. Các thông tin nguồn và đường dẫn hãng được lưu ở site/data.json; tuyệt đối không diễn giải SKU tham chiếu là serial hàng thật. Website là báo cáo độc lập, không phải quảng cáo được hãng/cửa hàng phê duyệt.
+
+## Bộ chọn nhiều tiêu chí cho bản cơ bản
+Có18tiêu chí thuộc4nhóm. Mỗi tiêu chí được chọn sinh đúng1lýdo/máy: favorable (có tín hiệu thuận lợi từ niêm yết/ảnh/sở thích), tradeoff (cần cân nhắc so với yêu cầu), unknown (chưa xác nhận). Favorable không phải đã đo hay đã đáp ứng trên hàng thực. Xếp máy trong ngân sách theo sốfavorable, trọng lượng mỗi tiêu chí ngang nhau, giữ đồng hạng; không dùng unknown để cho điểm, không phát sinh definitiveWinner. Khi chỉ chọn pin/bảo hành/độêm chưa có dữ liệu, không đưa ra shortlist. Quy tắc dùng giá thấp nhất và khối lượng thấp nhất của3niêm yết, ảnhnumpad, màn16inch chưa mâu thuẫn,120Hz vs60Hz theo shop, hoặc sở thích ngoại hình>=4/5. Cảm giácmượt/đọcchữ/thoảimái chưa được đo. Máy16c luôn cần làm rõ mâu thuẫn màn/CPU/RAM. Phần giải thích đủ mọi tiêu chí được chọn;3dòng đầu và phầnXemthêm để tránh quá dài.

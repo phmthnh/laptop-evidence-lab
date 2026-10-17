@@ -1,1 +1,1 @@
-{"name":"laptop-evidence-lab","version":"1.0.0","private":true,"type":"module","scripts":{"test":"node --test tests/engine.test.js","start":"python -m http.server 4173 --directory site --bind 127.0.0.1"}}
+{"name":"laptop-evidence-lab","version":"1.0.0","private":true,"type":"module","scripts":{"test":"node --test tests/engine.test.js tests/matching.test.js","start":"python -m http.server 4173 --directory site --bind 127.0.0.1"}}

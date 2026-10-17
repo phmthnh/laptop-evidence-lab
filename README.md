@@ -39,3 +39,5 @@ GitHub Pages chỉ phục vụ thư mục `site/`. Workflow kiểm thử rồi d
 Chưa có MTM/serial hàng thực, benchmark cùng điều kiện, số đo pin, cân máy/sạc hoặc xác nhận tiếp nhận của Lenovo Việt Nam. Tên IdeaPad trên trang shop không chứng minh cùng SKU quốc tế. Giá niêm yết không xác nhận tồn kho hay giá cuối cùng. Trang không tự cập nhật giá hoặc chứng cứ.
 
 Bản Dễ hiểu dành cho Hà Anh: chọn nhu cầu hằng ngày, kết quả bằng lời và bảng so sánh rút gọn. Dấu ? giải thích bằng ví dụ gần gũi sau2giây hover/focus; bấm/chạm mở ngay, Escape/nút×/chạmngoài để đóng. Bản Chuyên sâu giữ thông số, nguồn và công cụ tính điểm.
+
+Bộ chọn nhu cầu:18tiêu chí trong4nhóm, chọn đồng thời không giới hạn trong danh sách, gợi ý chọn nhanh được cộng vào các lựa chọn cũ. Mỗi máy có đủ một lời giải thích cho mỗi tiêu chí đã chọn (3lýdo đầu và phần mở rộng), ảnh/xemnhanh/linkshop. Thứ tự tìm hiểu dựa vào số điểm thuận lợi có điều kiện, các tiêu chí tính ngang nhau; loại ngoài ngân sách, giữ đồng hạng, không kết luận người thắng. Ngoại hình dùng đánh giá cá nhân và được ghi rõ là ý kiến. Kiểm thử logic ở tests/matching.test.js.
