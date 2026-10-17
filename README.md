@@ -37,3 +37,5 @@ GitHub Pages chỉ phục vụ thư mục `site/`. Workflow kiểm thử rồi d
 ## Giới hạn
 
 Chưa có MTM/serial hàng thực, benchmark cùng điều kiện, số đo pin, cân máy/sạc hoặc xác nhận tiếp nhận của Lenovo Việt Nam. Tên IdeaPad trên trang shop không chứng minh cùng SKU quốc tế. Giá niêm yết không xác nhận tồn kho hay giá cuối cùng. Trang không tự cập nhật giá hoặc chứng cứ.
+
+Bản Dễ hiểu dành cho Hà Anh: chọn nhu cầu hằng ngày, kết quả bằng lời và bảng so sánh rút gọn. Dấu ? giải thích bằng ví dụ gần gũi sau2giây hover/focus; bấm/chạm mở ngay, Escape/nút×/chạmngoài để đóng. Bản Chuyên sâu giữ thông số, nguồn và công cụ tính điểm.
