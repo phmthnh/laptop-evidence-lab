@@ -35,3 +35,6 @@ export function installHelp(){
  popup.querySelector('button').onclick=()=>hide(true);window.addEventListener('scroll',()=>hide(),true);window.addEventListener('resize',()=>hide());
  return hide;
 }
+
+// Compatibility for tabs that still have the previous unversioned app cached.
+export const needs={balanced:['Tôi muốn cân bằng','Xem giá, cân nặng và bàn phím; pin và bảo hành cần xác nhận.'],carry:['Tôi hay mang máy đi làm','Cần cân cả máy và sạc.'],battery:['Tôi muốn ít phải cắm sạc','Chưa có số giờ dùng thực tế.'],numbers:['Tôi nhập số, dùng Excel nhiều','Cần thử bằng file Excel thường dùng.'],value:['Tôi muốn tiết kiệm chi phí','So sánh giá niêm yết và xác nhận đúng cấu hình.']};
