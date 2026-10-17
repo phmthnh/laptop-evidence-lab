@@ -25,7 +25,24 @@ export const needGroups = [
 ];
 export const needOptions=Object.fromEntries(needGroups.flatMap(g=>g.items.map(([id,label,hint])=>[id,{label,hint}])));
 export const defaultNeeds=[];
+export const needPacks=[
+ {id:'accounting',title:'Việc kế toán hằng ngày',hint:'Nhập số, Excel và nhìn bảng tính.',items:['numbers','excel','multitask','bigscreen','readability']},
+ {id:'mobile',title:'Hay mang máy đi',hint:'Mang nhẹ, vừa túi, ít phải cắm sạc.',items:['carry','compact','battery','quiet']},
+ {id:'office',title:'Ngồi văn phòng cả ngày',hint:'Nhìn chữ dễ, máy êm, nhập số thuận tay.',items:['readability','quiet','numbers','bigscreen']},
+ {id:'excelwork',title:'Excel & nhiều việc cùng lúc',hint:'File nặng, nhiều ứng dụng và tài liệu.',items:['excel','multitask','storage','upgrade']},
+ {id:'meetings',title:'Hay họp, đổi chỗ ngồi',hint:'Gọn để mang đi, quan tâm pin và cổng cắm.',items:['carry','compact','battery','ports']},
+ {id:'style',title:'Thích máy đẹp, gọn gàng',hint:'Kiểu dáng, màu máy và vừa túi.',items:['appearance','clean','compact']},
+ {id:'eyes',title:'Đọc và nhập liệu nhiều',hint:'Màn rộng, chữ dễ nhìn, cuộn trang mượt.',items:['bigscreen','readability','smooth','numbers']},
+ {id:'accessories',title:'Dùng nhiều thiết bị ngoài',hint:'Màn hình, máy in, chuột; cần rõ nơi hỗ trợ.',items:['ports','nearby','multitask']},
+ {id:'value',title:'Chi tiêu có tính toán',hint:'Tiết kiệm, đủ chỗ lưu và có thể nâng cấp.',items:['value','storage','upgrade']},
+ {id:'longterm',title:'Muốn dùng lâu, rõ bảo hành',hint:'Nâng cấp về sau và biết ai nhận sửa.',items:['upgrade','direct','nearby','value']}
+];
 export function normalizeNeeds(input){return Array.isArray(input)?[...new Set(input.filter(x=>typeof x==='string'&&Object.hasOwn(needOptions,x)))]:[];}
+export function toggleNeedPack(selected,id){
+ const current=normalizeNeeds(selected),pack=needPacks.find(p=>p.id===id);
+ if(!pack)return current;
+ return pack.items.every(k=>current.includes(k))?current.filter(k=>!pack.items.includes(k)):normalizeNeeds([...current,...pack.items]);
+}
 export function explainNeed(p,key,products,rating){
   const record=(status,text,source=p.shop)=>({key,label:needOptions[key].label,status,text,source});
   const money=n=>(n/1e6).toLocaleString('vi-VN');

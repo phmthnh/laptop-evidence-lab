@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
-import{needOptions,normalizeNeeds,compareNeeds}from'../site/matching.js';
+import{needOptions,needPacks,toggleNeedPack,normalizeNeeds,compareNeeds}from'../site/matching.js';
 const {products}=JSON.parse(fs.readFileSync(new URL('../site/data.json',import.meta.url),'utf8'));
 test('multiple selections are retained and each has one explanation per product',()=>{
  const keys=Object.keys(needOptions),r=compareNeeds(products,keys);
@@ -39,3 +39,6 @@ test('screen conflict remains unknown rather than claiming large screen fits',()
 
 test('explicit main priority narrows all-needs tie without inventing evidence',()=>{const keys=Object.keys(needOptions);assert.equal(compareNeeds(products,keys).shortlist.length,3);assert.deepEqual(compareNeeds(products,keys,{priority:'value'}).shortlist,['r170']);assert.deepEqual(compareNeeds(products,keys,{priority:'smooth'}).shortlist,['h255']);assert.equal(compareNeeds(products,keys,{priority:'battery'}).priorityApplied,false);assert.equal(compareNeeds(products,keys,{priority:'value'}).definitiveWinner,null);});
 test('priority cannot promote an excluded machine or an unselected need',()=>{const keys=Object.keys(needOptions);const r=compareNeeds(products,keys,{priority:'value',extra:3});assert.deepEqual(r.shortlist,[]);assert.equal(r.priorityApplied,false);assert.deepEqual(compareNeeds(products,['numbers'],{priority:'value'}).shortlist,['h255','core320','r170']);});
+
+test('ten scenario packs use valid needs and combine without duplicates',()=>{assert.equal(needPacks.length,10);for(const p of needPacks)assert.deepEqual(normalizeNeeds(p.items),p.items);let selected=toggleNeedPack([],'accounting');selected=toggleNeedPack(selected,'mobile');assert.equal(selected.length,9);selected=toggleNeedPack(selected,'excelwork');assert.equal(new Set(selected).size,selected.length);assert.ok(selected.includes('numbers')&&selected.includes('battery')&&selected.includes('storage'));});
+test('pack toggles preserve unrelated needs and partial packs can be completed',()=>{let selected=toggleNeedPack(['carry','numbers'],'mobile');assert.ok(selected.includes('numbers'));assert.equal(selected.filter(k=>needPacks.find(p=>p.id==='mobile').items.includes(k)).length,4);selected=toggleNeedPack(selected,'mobile');assert.deepEqual(selected,['numbers']);assert.deepEqual(toggleNeedPack(selected,'missing'),selected);});
