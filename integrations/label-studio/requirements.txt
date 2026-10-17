@@ -1,0 +1,2 @@
+label-studio==1.23.2
+mcp==2.3.0

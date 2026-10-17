@@ -29,6 +29,7 @@ function syncControls(){renderSliders();for(const key of ['budget','extra','maxW
 function battery(){const watts=Number($('#watts').value);$('#wattsValue').value=watts;$('#batteryResult').textContent=`${batteryScenario(50,watts).toLocaleString('vi-VN',{maximumFractionDigits:1})} giờ · giả định`;}
 async function start(){const res=await fetch('data.json');if(!res.ok)throw Error('Không tải được dữ liệu');data=await res.json();sourceMap=new Map(data.sources.map(s=>[s.id,s]));
  try{const q=new URL(location.href).searchParams.get('preferences');const raw=q?JSON.parse(q):JSON.parse(localStorage.getItem('laptop-preferences-v1')||'null');state=validSettings(raw);}catch{/* ignore invalid settings; retain safe defaults */}
+ const requestedView=new URL(location.href).searchParams.get('view');if(requestedView==='expert'||requestedView==='simple')state.mode=requestedView;
  renderProducts();renderPhotos();syncControls();battery();
  $('#sourceList').innerHTML=data.sources.map(s=>`<a href="${s.url}" target="_blank" rel="noopener"><span>${s.title}</span><small>${new URL(s.url).hostname} ↗</small></a>`).join('');
  $('#simpleBtn').onclick=()=>setMode('simple');$('#expertBtn').onclick=()=>setMode('expert');
