@@ -1,5 +1,5 @@
 export const clamp = (n, a=0, b=100) => Math.max(a, Math.min(b,n));
-export const defaults = {price:20,weight:25,battery:25,appearance:15,warranty:10,upgrade:5};
+export const defaults = {price:20,weight:20,battery:20,appearance:20,warranty:20,upgrade:20};
 export function interval(product, weights, {seller=false,appearance=null}={}) {
   const sum=Object.values(weights).reduce((a,b)=>a+Math.max(0,Number(b)||0),0);
   if(!sum) return {low:0,high:100,coverage:0,empty:true};

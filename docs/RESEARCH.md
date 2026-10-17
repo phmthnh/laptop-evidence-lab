@@ -22,7 +22,7 @@ Ngày kiểm tra: 18/10/2026 (Asia/Saigon). Phạm vi: ba URL người dùng cun
 | 16c | “DDR5X 5600 / 8hàn+8rời” | Manual, SPD và ảnh khe/bo mạch; không tự khẳng định DDR5X là cấu hình thật |
 | Cả ba | “Rút gọn” so với ảnh có numpad | Ghi nhận ảnh là evidence quảng cáo, không khẳng định hàng giao |
 
-Nguồn địa chỉ không nhất quán: nội dung trích xuất ban đầu trang H255 ghi Rose Town79 Ngọc Hồi; hai trang còn lại và chính sách ghi sảnhB Bluegem Tower, Thanh Trì. Không suy đoán địa điểm đang hoạt động hoặc khoảng cách từ nhà người dùng. Gọi xác nhận địa chỉ, giờ tiếp nhận và người chịu trách nhiệm trước khi đến.
+Đối chiếu lại ngày18/10/2026: cả ba trang bán và chính sách hiện cùng ghi sảnhB Bluegem Tower, Thanh Trì. Ghi nhận ban đầu H255 có Rose Town79 Ngọc Hồi là lịch sử, không còn là mâu thuẫn địa chỉ hiện tại. Không suy đoán địa điểm đang hoạt động hoặc khoảng cách từ nhà người dùng. Gọi xác nhận địa chỉ, giờ tiếp nhận và người chịu trách nhiệm trước khi đến.
 
 ## Bảo hành và hỗ trợ
 
@@ -66,4 +66,12 @@ Mô hình sở thích minh bạch, không phải benchmark hoặc bằng chứng
 Ảnh được tải nguyên bản để trang không phụ thuộc hotlink. Các thông tin nguồn và đường dẫn hãng được lưu ở site/data.json; tuyệt đối không diễn giải SKU tham chiếu là serial hàng thật. Website là báo cáo độc lập, không phải quảng cáo được hãng/cửa hàng phê duyệt.
 
 ## Bộ chọn nhiều tiêu chí cho bản cơ bản
-Có18tiêu chí thuộc4nhóm. Mỗi tiêu chí được chọn sinh đúng1lýdo/máy: favorable (có tín hiệu thuận lợi từ niêm yết/ảnh/sở thích), tradeoff (cần cân nhắc so với yêu cầu), unknown (chưa xác nhận). Favorable không phải đã đo hay đã đáp ứng trên hàng thực. Xếp máy trong ngân sách theo sốfavorable, trọng lượng mỗi tiêu chí ngang nhau, giữ đồng hạng; không dùng unknown để cho điểm, không phát sinh definitiveWinner. Khi chỉ chọn pin/bảo hành/độêm chưa có dữ liệu, không đưa ra shortlist. Quy tắc dùng giá thấp nhất và khối lượng thấp nhất của3niêm yết, ảnhnumpad, màn16inch chưa mâu thuẫn,120Hz vs60Hz theo shop, hoặc sở thích ngoại hình>=4/5. Cảm giácmượt/đọcchữ/thoảimái chưa được đo. Máy16c luôn cần làm rõ mâu thuẫn màn/CPU/RAM. Phần giải thích đủ mọi tiêu chí được chọn;3dòng đầu và phầnXemthêm để tránh quá dài.
+Có18tiêu chí thuộc4nhóm. Mỗi tiêu chí được chọn sinh đúng1lýdo/máy: favorable (có tín hiệu thuận lợi từ niêm yết/ảnh/sở thích), tradeoff (cần cân nhắc so với yêu cầu), unknown (chưa xác nhận). Favorable không phải đã đo hay đã đáp ứng trên hàng thực. Xếp máy trong ngân sách theo sốfavorable, trọng lượng mỗi tiêu chí ngang nhau, giữ đồng hạng; không dùng unknown để cho điểm, không phát sinh definitiveWinner. Khi chỉ chọn pin/bảo hành/độêm chưa có dữ liệu, không đưa ra shortlist. Quy tắc dùng giá thấp nhất và khối lượng thấp nhất của3niêm yết, ảnhnumpad, màn16inch chưa mâu thuẫn,120Hz của H255 so với60Hz của SE theo shop;16c giữ unknown vì màn còn mâu thuẫn, hoặc sở thích ngoại hình>=4/5. Cảm giácmượt/đọcchữ/thoảimái chưa được đo. Máy16c luôn cần làm rõ mâu thuẫn màn/CPU/RAM. Phần giải thích đủ mọi tiêu chí được chọn;3dòng đầu và phầnXemthêm để tránh quá dài.
+
+## Rà soát đồng bộ và trạng thái ban đầu (18/10/2026)
+
+Đã đọc lại ba trang bán, chính sách, AMD H255/Ryzen7 170, Intel320, các trang Lenovo tham chiếu và IWS. Tất cả URL ở site/data.json. Mỗi claim có liên kết nguồn bổ sung để đối chiếu shop/hãng/chính sách, không coi SKU tham chiếu là máy giao. Bản dễ hiểu thể hiện riêng loại RAM/cách nâng chưa rõ ở16c; tiêu chí cuộn mượt của16c giữ unknown. H255 còn có cách ghi255H trong bảng so vớiH255 tiêu đề/AMD; cần BIOS/MTM, không tự đồng nhất.
+
+Hai chế độ chia sẻ data.json (listingSpecs cho các số tóm tắt) và trạng thái trong cùng phiên. Bản dễ hiểu đếm điểm thuận lợi ngang nhau; bản kỹ thuật dùng khoảng điểm chuẩn hóa trọng số, vì vậy không yêu cầu hai phương pháp cho cùng thứ tự. Không cách nào chứng minh máy đáp ứng đầy đủ khi còn thiếu kiểm tra hàng thực.
+
+Mỗi lần mở/tải lại hoặc phục hồi trang từ back-forward cache: chưa chọn tiêu chí, chưa chấm kiểu dáng,6trọng số đều20 (mỗi tiêu chí1/6 sau chuẩn hóa), không bật nhận cân nặng shop, không bật điều kiện bảo hành trực tiếp, ngân sách23 với trần tuyệt đối loại23, phụ phí0. Chọn chế độ xem bằng URL được phép; lựa chọn localStorage và URL preferences chỉ áp dụng khi người dùng bấm nạp tương ứng. NútĐặtlại reset cả công cụ giả định pin. Mức công suất8W mặc định của công cụ chỉ minh họa, không là kết quả pin máy.

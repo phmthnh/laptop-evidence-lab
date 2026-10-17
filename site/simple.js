@@ -14,7 +14,7 @@ export const helpText = {
 };
 export function helpButton(key){if(!helpText[key])return '';return `<button type="button" class="spec-help-trigger" data-help="${key}" aria-label="Giải thích: ${helpText[key][0]}" aria-controls="spec-help" aria-expanded="false">?</button>`;}
 export function simpleCell(p,field){
- const cells={price:`${(p.price.value/1e6).toLocaleString('vi-VN')} triệu`,weight:`${p.weight.value.toLocaleString('vi-VN')} kg theo cửa hàng`,battery:'Chưa biết dùng được mấy giờ',keyboard:'Có trong ảnh · cần thử máy thật',memory:'16 GB theo cửa hàng',ssd:'512 GB theo cửa hàng',display:p.id==='r170'?'Cần hỏi lại kích thước màn hình':'Cửa hàng ghi 16 inch · nên nhìn thử chữ',warranty:'Máy 12 tháng qua shop · pin/sạc 6 tháng'};
+ const cells={price:`${(p.price.value/1e6).toLocaleString('vi-VN')} triệu`,weight:`${p.weight.value.toLocaleString('vi-VN')} kg theo cửa hàng`,battery:'Chưa biết dùng được mấy giờ',keyboard:'Có trong ảnh · cần thử máy thật',memory:`${p.listingSpecs.memoryGB} GB theo cửa hàng${p.claims.memory.status==='conflict'?' · loại RAM/cách nâng chưa rõ':''}`,ssd:`${p.listingSpecs.ssdGB} GB theo cửa hàng`,display:p.claims.display.status==='conflict'?'Cần hỏi lại kích thước màn hình':'Cửa hàng ghi 16 inch · nên nhìn thử chữ',warranty:'Máy 12 tháng qua shop · pin/sạc 6 tháng'};
  return cells[field];
 }
 export function installHelp(){
