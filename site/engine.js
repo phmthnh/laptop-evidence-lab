@@ -20,5 +20,11 @@ export function decisiveWinner(items) {
 }
 export function batteryScenario(wh,watts,usable=.9) {return wh>0&&watts>0&&usable>0&&usable<=1?wh*usable/watts:null;}
 export function labelTasks(data) {
-  return data.products.flatMap(p=>Object.entries(p.claims).map(([field,c])=>({data:{claim_id:p.id+':'+field,product:p.name,field,claim:c.text,evidence_status:c.status,source:c.source,checked_at:data.checkedAt,review_prompt:'Đối chiếu đúng MTM/serial; ghi URL hoặc phép đo, không dùng mẫu tương tự.'}})));
+  const sources=new Map((data.sources||[]).map(s=>[s.id,s]));
+  return data.products.flatMap(p=>Object.entries(p.claims).map(([field,c])=>{
+    const refs=[...new Set(c.sources||[c.source])].map(id=>({id,url:sources.get(id)?.url||id,kind:sources.get(id)?.kind||'unknown'}));
+    const listed=({price:p.price?.value,weight:p.weight?.value,memory:p.listingSpecs?.memoryGB,ssd:p.listingSpecs?.ssdGB,battery:p.listingSpecs?.batteryWh})[field];
+    const unit=({price:'VND',weight:'kg',memory:'GB',ssd:'GB',battery:'Wh'})[field];
+    return {data:{claim_id:p.id+':'+field,product:p.name,field,claim:c.text,evidence_status:c.status,source:refs.map(s=>s.url).join('\n'),sources:refs,checked_at:data.checkedAt,data_version:data.version||1,...(Number.isFinite(listed)?{listed_value:listed,listed_unit:unit}:{}),review_prompt:`Đối chiếu đúng MTM/serial; ghi URL hoặc phép đo, không dùng mẫu tương tự. ${field==='battery'?`Dung lượng công bố: ${listed??'chưa rõ'} Wh; chưa đo giờ sử dụng, không quy đổi Wh thành thời lượng thực tế.`:'Số cửa hàng, ảnh quảng cáo và SKU hãng tham chiếu chưa xác nhận chiếc máy được giao.'}`}};
+  }));
 }

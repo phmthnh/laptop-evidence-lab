@@ -48,3 +48,15 @@ Bridge kiểm tra schema Label Studio1.23.2, không hứa tương thích schema 
 Nguồn: https://labelstud.io/guide/tasks.html · https://labelstud.io/guide/export.html · https://api.labelstud.io/api-reference/api-reference/projects/create · https://api.labelstud.io/api-reference/api-reference/projects/import-tasks
 
 Nhúng toàn bộ ứng dụng bằng tag ReactCode chỉ có ở Enterprise theo https://labelstud.io/tags/reactcode. Bộ task/XML hiện tại dùng Text/Choices/TextArea, không giả vờ có Enterprise hoặc tài khoản cloud.
+
+## Làm mới project cục bộ hiện có
+
+Không import lại36task vào project1. Để cập nhật dữ liệu và nguồn mà giữ ID, annotation, draft và prediction:
+
+```powershell
+node scripts/export-tasks.mjs
+python integrations/label-studio/refresh_local.py
+python integrations/label-studio/refresh_local.py --apply
+```
+
+Lệnh đầu kiểm tra sai khác; `--apply` sao lưu SQLite vào `.private/backups/`, cập nhật đúng36task theo claim_id trong transaction và kiểm tra phần đánh giá còn nguyên. Chỉ hỗ trợ schema cục bộ đã thiết lập; không dùng cho instance từ xa hoặc DB đang migration. Script riêng này có quyền ghi theo lệnh người dùng; MCP vẫn chỉ đọc. Báo cáo đồng bộ lưu ở `.private/labelstudio-refresh-report.json`. Nguồn task chứa toàn bộ URL đối chiếu, data_version và số công bố có đơn vị cho giá/cân nặng/RAM/SSD/pin. Giao diện review hiện có hiển thị các URL ở trườngsource; pin50Wh được nhắc trongreview_prompt và không biến thành số giờ sử dụng.
