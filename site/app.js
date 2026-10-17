@@ -1,7 +1,7 @@
-import{freshState}from'./session.js?v=audit-20261018-3';
-import{defaults,interval,eligibility,batteryScenario,labelTasks,clamp}from'./engine.js?v=audit-20261018-3';
-import{helpButton,simpleCell,installHelp}from'./simple.js?v=audit-20261018-3';
-import{needGroups,needOptions,defaultNeeds,normalizeNeeds,compareNeeds}from'./matching.js?v=audit-20261018-3';
+import{freshState}from'./session.js?v=simple-20261018-4';
+import{defaults,interval,eligibility,batteryScenario,labelTasks,clamp}from'./engine.js?v=simple-20261018-4';
+import{helpButton,simpleCell,installHelp}from'./simple.js?v=simple-20261018-4';
+import{needGroups,needOptions,defaultNeeds,normalizeNeeds,compareNeeds}from'./matching.js?v=simple-20261018-4';
 const $=s=>document.querySelector(s), $$=s=>[...document.querySelectorAll(s)];
 const esc=v=>String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const labels={listing:'Giá trên web',primary:'Thông số hãng (chip)',reference:'SKU hãng tham chiếu',seller:'Cửa hàng công bố',photo:'Quan sát ảnh quảng cáo',policy:'Chính sách cửa hàng',conflict:'Mâu thuẫn / cần làm rõ',unknown:'Chưa đủ dữ liệu'};
@@ -46,7 +46,7 @@ function openQuick(id){const p=data.products.find(x=>x.id===id);if(!p)return;clo
 function setMode(mode){closeHelp();state.mode=mode;document.body.dataset.view=mode;$('#simpleBtn').setAttribute('aria-pressed',String(mode==='simple'));$('#expertBtn').setAttribute('aria-pressed',String(mode==='expert'));renderProducts();renderPhotos();$$('.expert-only').forEach(e=>e.hidden=mode!=='expert');renderTable();renderScores();}
 function syncControls(){renderNeedControls();renderSliders();for(const key of ['budget','extra','maxWeight'])$('#'+key).value=state[key];for(const key of ['seller','direct'])$('#'+key).checked=state[key];$$('[data-rating]').forEach(e=>e.value=state.ratings[e.dataset.rating]??'');setMode(state.mode);renderScores();}
 function battery(){const watts=Number($('#watts').value);$('#wattsValue').value=watts;$('#batteryResult').textContent=`${batteryScenario(50,watts).toLocaleString('vi-VN',{maximumFractionDigits:1})} giờ · giả định`;}
-async function start(){if(!$('#needChoices')||!$('#productQuick')||!$('#restore')||!$('#auditContent')){const fresh=new URL(location.href);if(fresh.searchParams.get('v')!=='audit-20261018-3'){fresh.searchParams.set('v','audit-20261018-3');location.replace(fresh.href);return;}throw Error('Giao diện cũ còn trong bộ nhớ đệm; vui lòng tải lại trang.');}const res=await fetch('data.json?v=audit-20261018-3',{cache:'no-store'});if(!res.ok)throw Error('Không tải được dữ liệu');data=await res.json();sourceMap=new Map(data.sources.map(s=>[s.id,s]));
+async function start(){if(!$('#needChoices')||!$('#productQuick')||!$('#restore')||!$('#auditContent')||!$('.simple-audit-grid')){const fresh=new URL(location.href);if(fresh.searchParams.get('v')!=='simple-20261018-4'){fresh.searchParams.set('v','simple-20261018-4');location.replace(fresh.href);return;}throw Error('Giao diện cũ còn trong bộ nhớ đệm; vui lòng tải lại trang.');}const res=await fetch('data.json?v=simple-20261018-4',{cache:'no-store'});if(!res.ok)throw Error('Không tải được dữ liệu');data=await res.json();sourceMap=new Map(data.sources.map(s=>[s.id,s]));
  state=freshState();
  const requestedView=new URL(location.href).searchParams.get('view');if(requestedView==='expert'||requestedView==='simple')state.mode=requestedView;
  closeHelp=installHelp();syncControls();battery();
