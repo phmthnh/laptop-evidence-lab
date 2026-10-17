@@ -1,0 +1,434 @@
+[
+  {
+    "data": {
+      "claim_id": "h255:price",
+      "product": "Xiaoxin 16",
+      "field": "price",
+      "claim": "22,8 triệu đồng · giá hiển thị ngày kiểm tra",
+      "evidence_status": "listing",
+      "source": "https://trieubom.com/xiaoxin-16-2025-lenovo-ideapad-slim-5-2025-r7-h-255-16gb-ram-512gb-ssd/",
+      "checked_at": "2026-10-18",
+      "review_prompt": "Đối chiếu đúng MTM/serial; ghi URL hoặc phép đo, không dùng mẫu tương tự."
+    }
+  },
+  {
+    "data": {
+      "claim_id": "h255:cpu",
+      "product": "Xiaoxin 16",
+      "field": "cpu",
+      "claim": "AMD H 255: Zen 4, 8 nhân / 16 luồng, tối đa 4,9 GHz; Radeon 780M. Thông số chip, chưa phải hiệu năng máy.",
+      "evidence_status": "primary",
+      "source": "https://www.amd.com/zh-cn/products/processors/laptop/ryzen/200-series/amd-ryzen-7-h-255.html",
+      "checked_at": "2026-10-18",
+      "review_prompt": "Đối chiếu đúng MTM/serial; ghi URL hoặc phép đo, không dùng mẫu tương tự."
+    }
+  },
+  {
+    "data": {
+      "claim_id": "h255:memory",
+      "product": "Xiaoxin 16",
+      "field": "memory",
+      "claim": "16 GB; cửa hàng ghi nâng cấp được, 5600 MHz. Chưa có ảnh khe RAM hoặc giới hạn theo MTM.",
+      "evidence_status": "seller",
+      "source": "https://trieubom.com/xiaoxin-16-2025-lenovo-ideapad-slim-5-2025-r7-h-255-16gb-ram-512gb-ssd/",
+      "checked_at": "2026-10-18",
+      "review_prompt": "Đối chiếu đúng MTM/serial; ghi URL hoặc phép đo, không dùng mẫu tương tự."
+    }
+  },
+  {
+    "data": {
+      "claim_id": "h255:ssd",
+      "product": "Xiaoxin 16",
+      "field": "ssd",
+      "claim": "512 GB PCIe 4.0; chưa biết hãng SSD, số khe và kích thước khe thực tế.",
+      "evidence_status": "seller",
+      "source": "https://trieubom.com/xiaoxin-16-2025-lenovo-ideapad-slim-5-2025-r7-h-255-16gb-ram-512gb-ssd/",
+      "checked_at": "2026-10-18",
+      "review_prompt": "Đối chiếu đúng MTM/serial; ghi URL hoặc phép đo, không dùng mẫu tương tự."
+    }
+  },
+  {
+    "data": {
+      "claim_id": "h255:display",
+      "product": "Xiaoxin 16",
+      "field": "display",
+      "claim": "Cửa hàng: 16 inch, 1920×1200 IPS, 120 Hz, 400 nit, 100% sRGB. SKU Lenovo tham chiếu 83QH0004CD có 120 Hz; chưa khớp MTM hàng bán.",
+      "evidence_status": "seller",
+      "source": "https://trieubom.com/xiaoxin-16-2025-lenovo-ideapad-slim-5-2025-r7-h-255-16gb-ram-512gb-ssd/",
+      "checked_at": "2026-10-18",
+      "review_prompt": "Đối chiếu đúng MTM/serial; ghi URL hoặc phép đo, không dùng mẫu tương tự."
+    }
+  },
+  {
+    "data": {
+      "claim_id": "h255:weight",
+      "product": "Xiaoxin 16",
+      "field": "weight",
+      "claim": "1,81 kg theo cửa hàng; chưa cân máy cùng bộ sạc.",
+      "evidence_status": "seller",
+      "source": "https://trieubom.com/xiaoxin-16-2025-lenovo-ideapad-slim-5-2025-r7-h-255-16gb-ram-512gb-ssd/",
+      "checked_at": "2026-10-18",
+      "review_prompt": "Đối chiếu đúng MTM/serial; ghi URL hoặc phép đo, không dùng mẫu tương tự."
+    }
+  },
+  {
+    "data": {
+      "claim_id": "h255:battery",
+      "product": "Xiaoxin 16",
+      "field": "battery",
+      "claim": "50 Wh theo cửa hàng và SKU Lenovo tham chiếu; chưa có bài đo cùng tác vụ. Không quy đổi thành thời lượng thực tế.",
+      "evidence_status": "reference",
+      "source": "https://item.lenovo.com.cn/product/1051899.html",
+      "checked_at": "2026-10-18",
+      "review_prompt": "Đối chiếu đúng MTM/serial; ghi URL hoặc phép đo, không dùng mẫu tương tự."
+    }
+  },
+  {
+    "data": {
+      "claim_id": "h255:keyboard",
+      "product": "Xiaoxin 16",
+      "field": "keyboard",
+      "claim": "Ảnh chính có cụm phím số bên phải; chữ mô tả ghi rút gọn / không LED. Chưa kiểm tra hàng thật.",
+      "evidence_status": "photo",
+      "source": "https://trieubom.com/xiaoxin-16-2025-lenovo-ideapad-slim-5-2025-r7-h-255-16gb-ram-512gb-ssd/",
+      "checked_at": "2026-10-18",
+      "review_prompt": "Đối chiếu đúng MTM/serial; ghi URL hoặc phép đo, không dùng mẫu tương tự."
+    }
+  },
+  {
+    "data": {
+      "claim_id": "h255:appearance",
+      "product": "Xiaoxin 16",
+      "field": "appearance",
+      "claim": "Ảnh: viền màn tối, kê tay xám, phím tối. Mặt B không phải toàn bộ màu sáng. Màu biến đổi giữa các ảnh; chưa kiểm tra độ bám vân tay.",
+      "evidence_status": "photo",
+      "source": "https://trieubom.com/xiaoxin-16-2025-lenovo-ideapad-slim-5-2025-r7-h-255-16gb-ram-512gb-ssd/",
+      "checked_at": "2026-10-18",
+      "review_prompt": "Đối chiếu đúng MTM/serial; ghi URL hoặc phép đo, không dùng mẫu tương tự."
+    }
+  },
+  {
+    "data": {
+      "claim_id": "h255:ports",
+      "product": "Xiaoxin 16",
+      "field": "ports",
+      "claim": "Cửa hàng ghi USB-C Gen 2 nhưng tốc độ 20 Gbps và Thunderbolt 4; cần manual/MTM và thử dock. Lenovo tham chiếu chỉ ghi 2 USB-C đầy đủ chức năng.",
+      "evidence_status": "conflict",
+      "source": "https://trieubom.com/xiaoxin-16-2025-lenovo-ideapad-slim-5-2025-r7-h-255-16gb-ram-512gb-ssd/",
+      "checked_at": "2026-10-18",
+      "review_prompt": "Đối chiếu đúng MTM/serial; ghi URL hoặc phép đo, không dùng mẫu tương tự."
+    }
+  },
+  {
+    "data": {
+      "claim_id": "h255:dimensions",
+      "product": "Xiaoxin 16",
+      "field": "dimensions",
+      "claim": "313,4 × 222 × 16,9 mm trên trang bán: cần xác minh. Đường chéo 16 inch 16:10 suy ra vùng hiển thị rộng khoảng 344,6 mm, lớn hơn chiều ngang 313,4 mm được ghi.",
+      "evidence_status": "conflict",
+      "source": "https://trieubom.com/xiaoxin-16-2025-lenovo-ideapad-slim-5-2025-r7-h-255-16gb-ram-512gb-ssd/",
+      "checked_at": "2026-10-18",
+      "review_prompt": "Đối chiếu đúng MTM/serial; ghi URL hoặc phép đo, không dùng mẫu tương tự."
+    }
+  },
+  {
+    "data": {
+      "claim_id": "h255:warranty",
+      "product": "Xiaoxin 16",
+      "field": "warranty",
+      "claim": "12 tháng qua cửa hàng; pin/sạc 6 tháng. Chưa chứng minh Lenovo Việt Nam nhận serial này.",
+      "evidence_status": "policy",
+      "source": "https://trieubom.com/chinh-sach-bao-hanh-san-pham/",
+      "checked_at": "2026-10-18",
+      "review_prompt": "Đối chiếu đúng MTM/serial; ghi URL hoặc phép đo, không dùng mẫu tương tự."
+    }
+  },
+  {
+    "data": {
+      "claim_id": "core320:price",
+      "product": "Xiaoxin 16 SE",
+      "field": "price",
+      "claim": "22,4 triệu đồng · giá hiển thị ngày kiểm tra",
+      "evidence_status": "listing",
+      "source": "https://trieubom.com/xiaoxin-16-se-2026-lenovo-ideapad-slim-3-2026-core-5-320-16gb-ram-512gb-ssd/",
+      "checked_at": "2026-10-18",
+      "review_prompt": "Đối chiếu đúng MTM/serial; ghi URL hoặc phép đo, không dùng mẫu tương tự."
+    }
+  },
+  {
+    "data": {
+      "claim_id": "core320:cpu",
+      "product": "Xiaoxin 16 SE",
+      "field": "cpu",
+      "claim": "Intel Series 3 / Wildcat Lake: 2P + 4 LPE = 6 nhân / 6 luồng; tối đa 4,6 GHz; công suất base/turbo 15/35 W; 2 Xe cores. Không phải Core i5 thế hệ 3.",
+      "evidence_status": "primary",
+      "source": "https://www.intel.com/content/www/us/en/products/sku/246018/intel-core-5-processor-320-6m-cache-up-to-4-60-ghz/specifications.html",
+      "checked_at": "2026-10-18",
+      "review_prompt": "Đối chiếu đúng MTM/serial; ghi URL hoặc phép đo, không dùng mẫu tương tự."
+    }
+  },
+  {
+    "data": {
+      "claim_id": "core320:memory",
+      "product": "Xiaoxin 16 SE",
+      "field": "memory",
+      "claim": "16 GB DDR5, cửa hàng ghi nâng cấp được. Chưa biết số khe, RAM hàn hoặc mức nâng tối đa của MTM.",
+      "evidence_status": "seller",
+      "source": "https://trieubom.com/xiaoxin-16-se-2026-lenovo-ideapad-slim-3-2026-core-5-320-16gb-ram-512gb-ssd/",
+      "checked_at": "2026-10-18",
+      "review_prompt": "Đối chiếu đúng MTM/serial; ghi URL hoặc phép đo, không dùng mẫu tương tự."
+    }
+  },
+  {
+    "data": {
+      "claim_id": "core320:ssd",
+      "product": "Xiaoxin 16 SE",
+      "field": "ssd",
+      "claim": "512 GB NVMe M.2; chưa xác minh loại NAND, số khe và khả năng thay ổ.",
+      "evidence_status": "seller",
+      "source": "https://trieubom.com/xiaoxin-16-se-2026-lenovo-ideapad-slim-3-2026-core-5-320-16gb-ram-512gb-ssd/",
+      "checked_at": "2026-10-18",
+      "review_prompt": "Đối chiếu đúng MTM/serial; ghi URL hoặc phép đo, không dùng mẫu tương tự."
+    }
+  },
+  {
+    "data": {
+      "claim_id": "core320:display",
+      "product": "Xiaoxin 16 SE",
+      "field": "display",
+      "claim": "16 inch 1920×1200 IPS, 60 Hz, 400 nit, 45% NTSC theo cửa hàng; chưa đo panel thực tế.",
+      "evidence_status": "seller",
+      "source": "https://trieubom.com/xiaoxin-16-se-2026-lenovo-ideapad-slim-3-2026-core-5-320-16gb-ram-512gb-ssd/",
+      "checked_at": "2026-10-18",
+      "review_prompt": "Đối chiếu đúng MTM/serial; ghi URL hoặc phép đo, không dùng mẫu tương tự."
+    }
+  },
+  {
+    "data": {
+      "claim_id": "core320:weight",
+      "product": "Xiaoxin 16 SE",
+      "field": "weight",
+      "claim": "1,68 kg trên trang bán và Lenovo wiki tham chiếu; chưa khớp MTM hoặc cân cả sạc.",
+      "evidence_status": "reference",
+      "source": "https://www.lenovo.com.cn/wiki/product-1057911.html",
+      "checked_at": "2026-10-18",
+      "review_prompt": "Đối chiếu đúng MTM/serial; ghi URL hoặc phép đo, không dùng mẫu tương tự."
+    }
+  },
+  {
+    "data": {
+      "claim_id": "core320:battery",
+      "product": "Xiaoxin 16 SE",
+      "field": "battery",
+      "claim": "50 Wh theo cửa hàng và Lenovo wiki tham chiếu; chưa đo giờ sử dụng kế toán.",
+      "evidence_status": "reference",
+      "source": "https://www.lenovo.com.cn/wiki/product-1057911.html",
+      "checked_at": "2026-10-18",
+      "review_prompt": "Đối chiếu đúng MTM/serial; ghi URL hoặc phép đo, không dùng mẫu tương tự."
+    }
+  },
+  {
+    "data": {
+      "claim_id": "core320:keyboard",
+      "product": "Xiaoxin 16 SE",
+      "field": "keyboard",
+      "claim": "Ảnh chính có cụm phím số bên phải dù bảng ghi rút gọn; chưa xác nhận hành trình phím, độ tương phản trong phòng hoặc đèn nền.",
+      "evidence_status": "photo",
+      "source": "https://trieubom.com/xiaoxin-16-se-2026-lenovo-ideapad-slim-3-2026-core-5-320-16gb-ram-512gb-ssd/",
+      "checked_at": "2026-10-18",
+      "review_prompt": "Đối chiếu đúng MTM/serial; ghi URL hoặc phép đo, không dùng mẫu tương tự."
+    }
+  },
+  {
+    "data": {
+      "claim_id": "core320:appearance",
+      "product": "Xiaoxin 16 SE",
+      "field": "appearance",
+      "claim": "Ảnh: viền màn đen, kê tay xám, phím tối. Chưa có mẫu màu thực tế hoặc thử vết bẩn.",
+      "evidence_status": "photo",
+      "source": "https://trieubom.com/xiaoxin-16-se-2026-lenovo-ideapad-slim-3-2026-core-5-320-16gb-ram-512gb-ssd/",
+      "checked_at": "2026-10-18",
+      "review_prompt": "Đối chiếu đúng MTM/serial; ghi URL hoặc phép đo, không dùng mẫu tương tự."
+    }
+  },
+  {
+    "data": {
+      "claim_id": "core320:ports",
+      "product": "Xiaoxin 16 SE",
+      "field": "ports",
+      "claim": "Cửa hàng ghi 2 USB-A, 1 USB-C, SD, HDMI, jack âm thanh, DC-in. Chưa xác nhận USB-C sạc PD / xuất hình hoặc tốc độ HDMI.",
+      "evidence_status": "seller",
+      "source": "https://trieubom.com/xiaoxin-16-se-2026-lenovo-ideapad-slim-3-2026-core-5-320-16gb-ram-512gb-ssd/",
+      "checked_at": "2026-10-18",
+      "review_prompt": "Đối chiếu đúng MTM/serial; ghi URL hoặc phép đo, không dùng mẫu tương tự."
+    }
+  },
+  {
+    "data": {
+      "claim_id": "core320:dimensions",
+      "product": "Xiaoxin 16 SE",
+      "field": "dimensions",
+      "claim": "Trang bán chỉ ghi dày 18 mm; thiếu chiều ngang/dọc và kích thước bộ sạc.",
+      "evidence_status": "unknown",
+      "source": "https://trieubom.com/xiaoxin-16-se-2026-lenovo-ideapad-slim-3-2026-core-5-320-16gb-ram-512gb-ssd/",
+      "checked_at": "2026-10-18",
+      "review_prompt": "Đối chiếu đúng MTM/serial; ghi URL hoặc phép đo, không dùng mẫu tương tự."
+    }
+  },
+  {
+    "data": {
+      "claim_id": "core320:warranty",
+      "product": "Xiaoxin 16 SE",
+      "field": "warranty",
+      "claim": "12 tháng qua cửa hàng; pin/sạc 6 tháng. Chưa chứng minh Lenovo Việt Nam nhận serial này.",
+      "evidence_status": "policy",
+      "source": "https://trieubom.com/chinh-sach-bao-hanh-san-pham/",
+      "checked_at": "2026-10-18",
+      "review_prompt": "Đối chiếu đúng MTM/serial; ghi URL hoặc phép đo, không dùng mẫu tương tự."
+    }
+  },
+  {
+    "data": {
+      "claim_id": "r170:price",
+      "product": "Xiaoxin 16c",
+      "field": "price",
+      "claim": "20 triệu đồng · giá hiển thị ngày kiểm tra",
+      "evidence_status": "listing",
+      "source": "https://trieubom.com/xiaoxin-16c-2025-lenovo-ideapad-slim-3-r7-170hs-16gb-ram-512gb-ssd/",
+      "checked_at": "2026-10-18",
+      "review_prompt": "Đối chiếu đúng MTM/serial; ghi URL hoặc phép đo, không dùng mẫu tương tự."
+    }
+  },
+  {
+    "data": {
+      "claim_id": "r170:cpu",
+      "product": "Xiaoxin 16c",
+      "field": "cpu",
+      "claim": "Shop ghi 170HS. AMD công bố Ryzen 7 170: Zen 3+, 8 nhân / 16 luồng, tối đa 4,75 GHz, Radeon 680M. Chưa chứng minh chip giao đúng tên nào.",
+      "evidence_status": "conflict",
+      "source": "https://www.amd.com/zh-cn/products/processors/laptop/ryzen/100-series/amd-ryzen-7-170.html",
+      "checked_at": "2026-10-18",
+      "review_prompt": "Đối chiếu đúng MTM/serial; ghi URL hoặc phép đo, không dùng mẫu tương tự."
+    }
+  },
+  {
+    "data": {
+      "claim_id": "r170:memory",
+      "product": "Xiaoxin 16c",
+      "field": "memory",
+      "claim": "Shop ghi DDR5X 5600, 8 GB hàn + 8 GB rời. Cần ảnh bo mạch/manual; chưa chấp nhận loại RAM, tốc độ hay topology là đã xác thực.",
+      "evidence_status": "conflict",
+      "source": "https://trieubom.com/xiaoxin-16c-2025-lenovo-ideapad-slim-3-r7-170hs-16gb-ram-512gb-ssd/",
+      "checked_at": "2026-10-18",
+      "review_prompt": "Đối chiếu đúng MTM/serial; ghi URL hoặc phép đo, không dùng mẫu tương tự."
+    }
+  },
+  {
+    "data": {
+      "claim_id": "r170:ssd",
+      "product": "Xiaoxin 16c",
+      "field": "ssd",
+      "claim": "512 GB NVMe M.2 theo cửa hàng; chưa kiểm tra ổ và khả năng mở rộng.",
+      "evidence_status": "seller",
+      "source": "https://trieubom.com/xiaoxin-16c-2025-lenovo-ideapad-slim-3-r7-170hs-16gb-ram-512gb-ssd/",
+      "checked_at": "2026-10-18",
+      "review_prompt": "Đối chiếu đúng MTM/serial; ghi URL hoặc phép đo, không dùng mẫu tương tự."
+    }
+  },
+  {
+    "data": {
+      "claim_id": "r170:display",
+      "product": "Xiaoxin 16c",
+      "field": "display",
+      "claim": "Tiêu đề / ảnh ghi 16; bảng lại ghi 14 inch, 1920×1200 IPS, 60 Hz, 300 nit. Không tự sửa thành 16 inch trong dữ liệu đã xác minh.",
+      "evidence_status": "conflict",
+      "source": "https://trieubom.com/xiaoxin-16c-2025-lenovo-ideapad-slim-3-r7-170hs-16gb-ram-512gb-ssd/",
+      "checked_at": "2026-10-18",
+      "review_prompt": "Đối chiếu đúng MTM/serial; ghi URL hoặc phép đo, không dùng mẫu tương tự."
+    }
+  },
+  {
+    "data": {
+      "claim_id": "r170:weight",
+      "product": "Xiaoxin 16c",
+      "field": "weight",
+      "claim": "1,68 kg theo cửa hàng; cần cân và xác định đúng chassis / MTM vì bảng màn hình mâu thuẫn.",
+      "evidence_status": "seller",
+      "source": "https://trieubom.com/xiaoxin-16c-2025-lenovo-ideapad-slim-3-r7-170hs-16gb-ram-512gb-ssd/",
+      "checked_at": "2026-10-18",
+      "review_prompt": "Đối chiếu đúng MTM/serial; ghi URL hoặc phép đo, không dùng mẫu tương tự."
+    }
+  },
+  {
+    "data": {
+      "claim_id": "r170:battery",
+      "product": "Xiaoxin 16c",
+      "field": "battery",
+      "claim": "Shop ghi 50 Wh; Lenovo 83K800DNCD tham chiếu cũng 50 Wh. Chưa khớp MTM và chưa đo thời lượng.",
+      "evidence_status": "reference",
+      "source": "https://item.lenovo.com.cn/product/1053257.html",
+      "checked_at": "2026-10-18",
+      "review_prompt": "Đối chiếu đúng MTM/serial; ghi URL hoặc phép đo, không dùng mẫu tương tự."
+    }
+  },
+  {
+    "data": {
+      "claim_id": "r170:keyboard",
+      "product": "Xiaoxin 16c",
+      "field": "keyboard",
+      "claim": "Ảnh chính có cụm phím số, bảng ghi rút gọn. Chưa thể xác nhận hàng giao có cùng bàn phím.",
+      "evidence_status": "photo",
+      "source": "https://trieubom.com/xiaoxin-16c-2025-lenovo-ideapad-slim-3-r7-170hs-16gb-ram-512gb-ssd/",
+      "checked_at": "2026-10-18",
+      "review_prompt": "Đối chiếu đúng MTM/serial; ghi URL hoặc phép đo, không dùng mẫu tương tự."
+    }
+  },
+  {
+    "data": {
+      "claim_id": "r170:appearance",
+      "product": "Xiaoxin 16c",
+      "field": "appearance",
+      "claim": "Ảnh: viền màn đen, kê tay xám, phím tối. Vỏ nhựa theo cửa hàng; chưa thử độ cứng hay cảm giác thực tế.",
+      "evidence_status": "photo",
+      "source": "https://trieubom.com/xiaoxin-16c-2025-lenovo-ideapad-slim-3-r7-170hs-16gb-ram-512gb-ssd/",
+      "checked_at": "2026-10-18",
+      "review_prompt": "Đối chiếu đúng MTM/serial; ghi URL hoặc phép đo, không dùng mẫu tương tự."
+    }
+  },
+  {
+    "data": {
+      "claim_id": "r170:ports",
+      "product": "Xiaoxin 16c",
+      "field": "ports",
+      "claim": "Shop: 2 USB-A, 1 USB-C Gen 2, SD, HDMI, jack, DC-in. Chưa kiểm tra sạc USB-C, xuất hình và khả năng dock.",
+      "evidence_status": "seller",
+      "source": "https://trieubom.com/xiaoxin-16c-2025-lenovo-ideapad-slim-3-r7-170hs-16gb-ram-512gb-ssd/",
+      "checked_at": "2026-10-18",
+      "review_prompt": "Đối chiếu đúng MTM/serial; ghi URL hoặc phép đo, không dùng mẫu tương tự."
+    }
+  },
+  {
+    "data": {
+      "claim_id": "r170:dimensions",
+      "product": "Xiaoxin 16c",
+      "field": "dimensions",
+      "claim": "Chỉ có số dày 18 mm. Thiếu kích thước ngang/dọc và cân nặng bộ sạc.",
+      "evidence_status": "unknown",
+      "source": "https://trieubom.com/xiaoxin-16c-2025-lenovo-ideapad-slim-3-r7-170hs-16gb-ram-512gb-ssd/",
+      "checked_at": "2026-10-18",
+      "review_prompt": "Đối chiếu đúng MTM/serial; ghi URL hoặc phép đo, không dùng mẫu tương tự."
+    }
+  },
+  {
+    "data": {
+      "claim_id": "r170:warranty",
+      "product": "Xiaoxin 16c",
+      "field": "warranty",
+      "claim": "12 tháng qua cửa hàng; pin/sạc 6 tháng. Chưa chứng minh Lenovo Việt Nam nhận serial này.",
+      "evidence_status": "policy",
+      "source": "https://trieubom.com/chinh-sach-bao-hanh-san-pham/",
+      "checked_at": "2026-10-18",
+      "review_prompt": "Đối chiếu đúng MTM/serial; ghi URL hoặc phép đo, không dùng mẫu tương tự."
+    }
+  }
+]

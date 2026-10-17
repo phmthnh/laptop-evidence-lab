@@ -1,0 +1,67 @@
+{
+  "version":1,"checkedAt":"2026-10-18","timezone":"Asia/Saigon",
+  "sources":[
+    {"id":"shop-h","title":"Triệu Bôm · Xiaoxin 16 H 255","url":"https://trieubom.com/xiaoxin-16-2025-lenovo-ideapad-slim-5-2025-r7-h-255-16gb-ram-512gb-ssd/","kind":"seller"},
+    {"id":"shop-se","title":"Triệu Bôm · Xiaoxin 16 SE Core 5 320","url":"https://trieubom.com/xiaoxin-16-se-2026-lenovo-ideapad-slim-3-2026-core-5-320-16gb-ram-512gb-ssd/","kind":"seller"},
+    {"id":"shop-c","title":"Triệu Bôm · Xiaoxin 16c R7-170HS","url":"https://trieubom.com/xiaoxin-16c-2025-lenovo-ideapad-slim-3-r7-170hs-16gb-ram-512gb-ssd/","kind":"seller"},
+    {"id":"warranty","title":"Triệu Bôm · Chính sách bảo hành","url":"https://trieubom.com/chinh-sach-bao-hanh-san-pham/","kind":"policy"},
+    {"id":"amd255","title":"AMD · Ryzen 7 H 255","url":"https://www.amd.com/zh-cn/products/processors/laptop/ryzen/200-series/amd-ryzen-7-h-255.html","kind":"primary"},
+    {"id":"amd170","title":"AMD · Ryzen 7 170","url":"https://www.amd.com/zh-cn/products/processors/laptop/ryzen/100-series/amd-ryzen-7-170.html","kind":"primary"},
+    {"id":"intel320","title":"Intel · Core 5 320","url":"https://www.intel.com/content/www/us/en/products/sku/246018/intel-core-5-processor-320-6m-cache-up-to-4-60-ghz/specifications.html","kind":"primary"},
+    {"id":"lenovo-h","title":"Lenovo · H255 83QH0005CD (tham chiếu)","url":"https://item.lenovo.com.cn/product/1051899.html","kind":"reference"},
+    {"id":"lenovo-h120","title":"Lenovo · H255 AK-83QH0004CD (tham chiếu)","url":"https://item.lenovo.com.cn/product/1052014.html","kind":"reference"},
+    {"id":"lenovo-c","title":"Lenovo · 16c AHP10 83K800DNCD (tham chiếu)","url":"https://item.lenovo.com.cn/product/1053257.html","kind":"reference"},
+    {"id":"lenovo-se","title":"Lenovo wiki · 16 SE Core 5 320 (tham chiếu)","url":"https://www.lenovo.com.cn/wiki/product-1057911.html","kind":"reference"},
+    {"id":"iws","title":"Lenovo China · Tra cứu bảo hành quốc tế","url":"https://consumerservice.lenovo.com.cn/iws.html","kind":"primary"},
+    {"id":"ls","title":"Label Studio · Import dữ liệu","url":"https://labelstud.io/guide/tasks.html","kind":"integration"},
+    {"id":"ls-export","title":"Label Studio · Export JSON","url":"https://labelstud.io/guide/export.html","kind":"integration"},
+    {"id":"ls-react","title":"Label Studio · ReactCode (Enterprise)","url":"https://labelstud.io/tags/reactcode","kind":"integration"}
+  ],
+  "products":[
+    {"id":"h255","name":"Xiaoxin 16","year":"2025","cpu":"Ryzen 7 H 255","image":"assets/h255.png","shop":"shop-h","color":"Xám / bạc trong thư viện ảnh","price":{"value":22800000,"status":"listing"},"weight":{"value":1.81,"status":"seller"},"short":"Màn hình cần được xác nhận kỹ","angle":"Cửa hàng niêm yết màn 120 Hz, 100% sRGB. Chưa xác nhận đúng panel trên hàng giao.",
+      "claims":{
+        "price":{"text":"22,8 triệu đồng · giá hiển thị ngày kiểm tra","status":"listing","source":"shop-h"},
+        "cpu":{"text":"AMD H 255: Zen 4, 8 nhân / 16 luồng, tối đa 4,9 GHz; Radeon 780M. Thông số chip, chưa phải hiệu năng máy.","status":"primary","source":"amd255"},
+        "memory":{"text":"16 GB; cửa hàng ghi nâng cấp được, 5600 MHz. Chưa có ảnh khe RAM hoặc giới hạn theo MTM.","status":"seller","source":"shop-h"},
+        "ssd":{"text":"512 GB PCIe 4.0; chưa biết hãng SSD, số khe và kích thước khe thực tế.","status":"seller","source":"shop-h"},
+        "display":{"text":"Cửa hàng: 16 inch, 1920×1200 IPS, 120 Hz, 400 nit, 100% sRGB. SKU Lenovo tham chiếu 83QH0004CD có 120 Hz; chưa khớp MTM hàng bán.","status":"seller","source":"shop-h"},
+        "weight":{"text":"1,81 kg theo cửa hàng; chưa cân máy cùng bộ sạc.","status":"seller","source":"shop-h"},
+        "battery":{"text":"50 Wh theo cửa hàng và SKU Lenovo tham chiếu; chưa có bài đo cùng tác vụ. Không quy đổi thành thời lượng thực tế.","status":"reference","source":"lenovo-h"},
+        "keyboard":{"text":"Ảnh chính có cụm phím số bên phải; chữ mô tả ghi rút gọn / không LED. Chưa kiểm tra hàng thật.","status":"photo","source":"shop-h"},
+        "appearance":{"text":"Ảnh: viền màn tối, kê tay xám, phím tối. Mặt B không phải toàn bộ màu sáng. Màu biến đổi giữa các ảnh; chưa kiểm tra độ bám vân tay.","status":"photo","source":"shop-h"},
+        "ports":{"text":"Cửa hàng ghi USB-C Gen 2 nhưng tốc độ 20 Gbps và Thunderbolt 4; cần manual/MTM và thử dock. Lenovo tham chiếu chỉ ghi 2 USB-C đầy đủ chức năng.","status":"conflict","source":"shop-h"},
+        "dimensions":{"text":"313,4 × 222 × 16,9 mm trên trang bán: cần xác minh. Đường chéo 16 inch 16:10 suy ra vùng hiển thị rộng khoảng 344,6 mm, lớn hơn chiều ngang 313,4 mm được ghi.","status":"conflict","source":"shop-h"},
+        "warranty":{"text":"12 tháng qua cửa hàng; pin/sạc 6 tháng. Chưa chứng minh Lenovo Việt Nam nhận serial này.","status":"policy","source":"warranty"}
+      }},
+    {"id":"core320","name":"Xiaoxin 16 SE","year":"2026","cpu":"Core 5 320","image":"assets/core320.jpg","shop":"shop-se","color":"Xám theo ảnh chính","price":{"value":22400000,"status":"listing"},"weight":{"value":1.68,"status":"seller"},"short":"Khối lượng niêm yết thấp hơn H 255","angle":"Nhẹ hơn 130 g theo số cửa hàng. Chưa có đo pin để kết luận dùng được lâu hơn.",
+      "claims":{
+        "price":{"text":"22,4 triệu đồng · giá hiển thị ngày kiểm tra","status":"listing","source":"shop-se"},
+        "cpu":{"text":"Intel Series 3 / Wildcat Lake: 2P + 4 LPE = 6 nhân / 6 luồng; tối đa 4,6 GHz; công suất base/turbo 15/35 W; 2 Xe cores. Không phải Core i5 thế hệ 3.","status":"primary","source":"intel320"},
+        "memory":{"text":"16 GB DDR5, cửa hàng ghi nâng cấp được. Chưa biết số khe, RAM hàn hoặc mức nâng tối đa của MTM.","status":"seller","source":"shop-se"},
+        "ssd":{"text":"512 GB NVMe M.2; chưa xác minh loại NAND, số khe và khả năng thay ổ.","status":"seller","source":"shop-se"},
+        "display":{"text":"16 inch 1920×1200 IPS, 60 Hz, 400 nit, 45% NTSC theo cửa hàng; chưa đo panel thực tế.","status":"seller","source":"shop-se"},
+        "weight":{"text":"1,68 kg trên trang bán và Lenovo wiki tham chiếu; chưa khớp MTM hoặc cân cả sạc.","status":"reference","source":"lenovo-se"},
+        "battery":{"text":"50 Wh theo cửa hàng và Lenovo wiki tham chiếu; chưa đo giờ sử dụng kế toán.","status":"reference","source":"lenovo-se"},
+        "keyboard":{"text":"Ảnh chính có cụm phím số bên phải dù bảng ghi rút gọn; chưa xác nhận hành trình phím, độ tương phản trong phòng hoặc đèn nền.","status":"photo","source":"shop-se"},
+        "appearance":{"text":"Ảnh: viền màn đen, kê tay xám, phím tối. Chưa có mẫu màu thực tế hoặc thử vết bẩn.","status":"photo","source":"shop-se"},
+        "ports":{"text":"Cửa hàng ghi 2 USB-A, 1 USB-C, SD, HDMI, jack âm thanh, DC-in. Chưa xác nhận USB-C sạc PD / xuất hình hoặc tốc độ HDMI.","status":"seller","source":"shop-se"},
+        "dimensions":{"text":"Trang bán chỉ ghi dày 18 mm; thiếu chiều ngang/dọc và kích thước bộ sạc.","status":"unknown","source":"shop-se"},
+        "warranty":{"text":"12 tháng qua cửa hàng; pin/sạc 6 tháng. Chưa chứng minh Lenovo Việt Nam nhận serial này.","status":"policy","source":"warranty"}
+      }},
+    {"id":"r170","name":"Xiaoxin 16c","year":"2025","cpu":"Ryzen 7 “170HS”*","image":"assets/r170.jpg","shop":"shop-c","color":"Xám theo ảnh chính","price":{"value":20000000,"status":"listing"},"weight":{"value":1.68,"status":"seller"},"short":"Giá niêm yết thấp nhất trong ba mẫu","angle":"Cần giải quyết sai khác tên CPU và kích thước màn hình trước khi so hiệu năng hoặc đặt mua.",
+      "claims":{
+        "price":{"text":"20 triệu đồng · giá hiển thị ngày kiểm tra","status":"listing","source":"shop-c"},
+        "cpu":{"text":"Shop ghi 170HS. AMD công bố Ryzen 7 170: Zen 3+, 8 nhân / 16 luồng, tối đa 4,75 GHz, Radeon 680M. Chưa chứng minh chip giao đúng tên nào.","status":"conflict","source":"amd170"},
+        "memory":{"text":"Shop ghi DDR5X 5600, 8 GB hàn + 8 GB rời. Cần ảnh bo mạch/manual; chưa chấp nhận loại RAM, tốc độ hay topology là đã xác thực.","status":"conflict","source":"shop-c"},
+        "ssd":{"text":"512 GB NVMe M.2 theo cửa hàng; chưa kiểm tra ổ và khả năng mở rộng.","status":"seller","source":"shop-c"},
+        "display":{"text":"Tiêu đề / ảnh ghi 16; bảng lại ghi 14 inch, 1920×1200 IPS, 60 Hz, 300 nit. Không tự sửa thành 16 inch trong dữ liệu đã xác minh.","status":"conflict","source":"shop-c"},
+        "weight":{"text":"1,68 kg theo cửa hàng; cần cân và xác định đúng chassis / MTM vì bảng màn hình mâu thuẫn.","status":"seller","source":"shop-c"},
+        "battery":{"text":"Shop ghi 50 Wh; Lenovo 83K800DNCD tham chiếu cũng 50 Wh. Chưa khớp MTM và chưa đo thời lượng.","status":"reference","source":"lenovo-c"},
+        "keyboard":{"text":"Ảnh chính có cụm phím số, bảng ghi rút gọn. Chưa thể xác nhận hàng giao có cùng bàn phím.","status":"photo","source":"shop-c"},
+        "appearance":{"text":"Ảnh: viền màn đen, kê tay xám, phím tối. Vỏ nhựa theo cửa hàng; chưa thử độ cứng hay cảm giác thực tế.","status":"photo","source":"shop-c"},
+        "ports":{"text":"Shop: 2 USB-A, 1 USB-C Gen 2, SD, HDMI, jack, DC-in. Chưa kiểm tra sạc USB-C, xuất hình và khả năng dock.","status":"seller","source":"shop-c"},
+        "dimensions":{"text":"Chỉ có số dày 18 mm. Thiếu kích thước ngang/dọc và cân nặng bộ sạc.","status":"unknown","source":"shop-c"},
+        "warranty":{"text":"12 tháng qua cửa hàng; pin/sạc 6 tháng. Chưa chứng minh Lenovo Việt Nam nhận serial này.","status":"policy","source":"warranty"}
+      }}
+  ]
+}

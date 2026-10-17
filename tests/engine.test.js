@@ -1,0 +1,10 @@
+import test from 'node:test';import assert from 'node:assert/strict';import{interval,eligibility,batteryScenario,decisiveWinner,labelTasks,defaults}from'../site/engine.js';
+const p={id:'a',name:'A',price:{value:20000000},weight:{value:1.68},claims:{battery:{text:'50Wh',status:'seller',source:'https://example.com'}}};
+test('unknown battery cannot become a neutral or favorable score',()=>{assert.deepEqual(interval(p,{battery:100}),{low:0,high:100,coverage:0,empty:false});});
+test('listing price only gives partial interval, seller weight is opt-in',()=>{const a=interval(p,defaults),b=interval(p,defaults,{seller:true});assert.equal(a.coverage,20);assert.equal(b.coverage,45);assert.ok(a.high-a.low>b.high-b.low);});
+test('zero weights do not produce NaN or a winner',()=>assert.equal(interval(p,{price:0}).empty,true));
+test('23 million exclusive including accessories; 22.99 allowed for evaluation',()=>{assert.equal(eligibility(p,{extra:3}).state,'excluded');assert.equal(eligibility(p,{extra:2.99}).state,'pending');});
+test('mandatory unknown prevents winner even with price-only separation',()=>assert.equal(decisiveWinner([{id:'a',eligibility:'pending',score:{low:90,high:90}},{id:'b',eligibility:'pass',score:{low:10,high:10}}]),null));
+test('interval overlap prevents definitive ranking',()=>assert.equal(decisiveWinner([{id:'a',eligibility:'pass',score:{low:30,high:90}},{id:'b',eligibility:'pass',score:{low:20,high:95}}]),null));
+test('explicit hypothetical energy arithmetic; invalid input rejected',()=>{assert.equal(batteryScenario(50,10),4.5);assert.equal(batteryScenario(50,0),null);});
+test('label export has stable IDs and does not invent annotations',()=>{const t=labelTasks({checkedAt:'2026-10-18',products:[p]});assert.equal(t[0].data.claim_id,'a:battery');assert.equal(t[0].annotations,undefined);});

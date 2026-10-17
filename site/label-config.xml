@@ -1,0 +1,18 @@
+<View>
+  <Header value="Laptop Evidence Lab — Kiem chung tung thong so"/>
+  <Header value="$product"/>
+  <Text name="claim" value="$claim"/>
+  <Text name="field" value="$field"/>
+  <Text name="source" value="$source"/>
+  <Text name="status" value="$evidence_status"/>
+  <Text name="checked" value="$checked_at"/>
+  <Text name="prompt" value="$review_prompt"/>
+  <Choices name="verdict" toName="claim" choice="single" required="true">
+    <Choice value="Da xac minh dung MTM"/>
+    <Choice value="Chi la SKU tham chieu"/>
+    <Choice value="Chi la thong tin cua hang"/>
+    <Choice value="Mau thuan"/>
+    <Choice value="Chua du bang chung"/>
+  </Choices>
+  <TextArea name="notes" toName="claim" placeholder="URL bang chung, MTM (khong public serial), dieu kien do va ly do ket luan" rows="5"/>
+</View>
