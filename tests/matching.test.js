@@ -36,3 +36,6 @@ test('personal appearance is identified as user opinion',()=>{
 test('screen conflict remains unknown rather than claiming large screen fits',()=>{
  const r=compareNeeds(products,['bigscreen']);const c=r.rows.find(x=>x.product.id==='r170');assert.equal(c.reasons[0].status,'unknown');
 });
+
+test('explicit main priority narrows all-needs tie without inventing evidence',()=>{const keys=Object.keys(needOptions);assert.equal(compareNeeds(products,keys).shortlist.length,3);assert.deepEqual(compareNeeds(products,keys,{priority:'value'}).shortlist,['r170']);assert.deepEqual(compareNeeds(products,keys,{priority:'smooth'}).shortlist,['h255']);assert.equal(compareNeeds(products,keys,{priority:'battery'}).priorityApplied,false);assert.equal(compareNeeds(products,keys,{priority:'value'}).definitiveWinner,null);});
+test('priority cannot promote an excluded machine or an unselected need',()=>{const keys=Object.keys(needOptions);const r=compareNeeds(products,keys,{priority:'value',extra:3});assert.deepEqual(r.shortlist,[]);assert.equal(r.priorityApplied,false);assert.deepEqual(compareNeeds(products,['numbers'],{priority:'value'}).shortlist,['h255','core320','r170']);});

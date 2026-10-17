@@ -51,12 +51,15 @@ export function explainNeed(p,key,products,rating){
     default:throw Error('Unknown need');
   }
 }
-export function compareNeeds(products,selected,{budget=23,extra=0,ratings={}}={}){
+export function compareNeeds(products,selected,{budget=23,extra=0,ratings={},priority=''}={}){
   const keys=normalizeNeeds(selected);
   const rows=products.map(p=>{const reasons=keys.map(k=>explainNeed(p,k,products,ratings[p.id]));const total=p.price.value+extra*1e6;return {product:p,reasons,total,excluded:total<18e6||total>=23e6||total>budget*1e6,favorable:reasons.filter(r=>r.status==='favorable').length,tradeoffs:reasons.filter(r=>r.status==='tradeoff').length,unknown:reasons.filter(r=>r.status==='unknown').length};});
-  rows.sort((a,b)=>Number(a.excluded)-Number(b.excluded)||b.favorable-a.favorable);
-  const eligible=rows.filter(r=>!r.excluded),top=Math.max(0,...eligible.map(r=>r.favorable));
-  const shortlist=top>0?eligible.filter(r=>r.favorable===top).map(r=>r.product.id):[];
+  const priorityKey=keys.includes(priority)?priority:'';
+  const preferred=r=>priorityKey&&r.reasons.some(x=>x.key===priorityKey&&x.status==='favorable')?1:0;
+  rows.sort((a,b)=>Number(a.excluded)-Number(b.excluded)||preferred(b)-preferred(a)||b.favorable-a.favorable);
+  const eligible=rows.filter(r=>!r.excluded),hasPriority=eligible.some(preferred);
+  const pool=hasPriority?eligible.filter(preferred):eligible,top=Math.max(0,...pool.map(r=>r.favorable));
+  const shortlist=top>0?pool.filter(r=>r.favorable===top).map(r=>r.product.id):[];
   // Never a definitive winner: shop figures/photos are conditional, mandatory facts unverified.
-  return {keys,rows,shortlist,definitiveWinner:null};
+  return {keys,rows,shortlist,priority:priorityKey,priorityApplied:hasPriority,definitiveWinner:null};
 }
